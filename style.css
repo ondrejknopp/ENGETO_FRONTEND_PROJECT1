@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto 0 auto;
+  background-color: #33292a;
+  height: 4rem;
+  overflow: initial;
+  position: sticky;
+  z-index: 500;
+  top: 0;
+}
+
+.topnav {
+  background-color: #33292a;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 34px 16px 34px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #33292a;
+  color: #e9877b;
+  /*text-decoration-line: underline;*/
+}
+
+.topnav a.active {
+  background-color: #33292a;
+  color: #e9877b;
+  /*text-decoration-line: underline;*/
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav :not(:last-child) {
+    display: none;
+    position: relative;
+    text-align: left;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+
+  .topnav {
+    position: relative;
+    margin: auto 0px auto auto;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+    margin: 5% 5% 5% 5%;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .img_section1 {
+    position: relative;
+    display: block;
+    /*width: 100%;*/
+    height: auto;
+    flex: 1 1 0;
+    margin: 20px;
+    border-radius: 5%;
+  }
+
+  .main_text {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: right;
+    margin-right: 15%;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    flex-shrink: 1;
+  }
+
+  .text1 {
+    position: relative;
+    flex-grow: 1;
+    flex: 50%;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: relative;
+    text-align: center;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    position: center;
+  }
+
+  .section2_icons {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    position: relative;
+  }
+
+  .icon {
+    width: 200px;
+    height: auto;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 10px auto 15px auto;
+    flex: calc(100% / 2);
+  }
+
+  .icon_text {
+    margin: 10px auto 15px auto;
+  }
+
+  .img_section3 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+
+  #our_trips_box {
+    min-height: 50px;
+    height: 4.625rem;
+    background-color: gray;
+    max-height: 100px;
+  }
+
+  .our_trips {
+    margin: auto;
+    position: relative;
+    font-size: 1rem;
+  }
+
+  .container4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px; /*neaplikiuje se?*/
+  }
+
+  .text_4_1 {
+    /*dořešit!*/
+    padding: 20px 20px 20px 20px;
+  }
+
+  .text_4_2 {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .container5_2 {
+    flex-direction: column;
+  }
+
+  .text_5_2 {
+    padding: 30px 20px 30px 20px;
+  }
+  .btn {
+    margin-top: 30px;
+  }
+
+  .img_section6 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 100%;
+    width: 100%;
+    max-height: 25%;
+  }
+}
+
+.homescreen {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem);
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .main_text {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(92, 91, 91);
+    text-align: right;
+    margin-right: 15%;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    flex-shrink: 1;
+  }
+}
+.section1 {
+  min-height: 50 vh;
+}
+
+.container1 {
+  display: flex;
+  margin: 5% auto 5% auto;
+  justify-content: space-between;
+  max-width: 956px;
+}
+
+.img_section1 {
+  position: relative;
+  object-fit: cover;
+  flex: 1 1 0;
+  margin: 20px;
+  min-width: 0;
+  border-radius: 5%;
+}
+
+.text1 {
+  position: relative;
+  flex: 1 1 0;
+  padding: 20px;
+  font-size: large;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.normal_text_B {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 14;
+  flex: 50%;
+  flex-wrap: wrap;
+}
+
+.section2 {
+  background-color: #33292a;
+}
+
+.text_2_1 {
+  margin: auto auto auto auto;
+  padding: 30px 20px 20px 20px;
+  max-width: 956px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.section2_icons {
+  display: flex;
+  background-color: #33292a;
+  align-items: center;
+  flex: 50%;
+  justify-content: space-between;
+  position: relative;
+  margin: auto auto auto auto;
+  padding: 15px 0px 60px 0px;
+  max-width: 956px;
+  font-family: "Roboto", sans-serif;
+}
+
+.icon {
+  width: 130px;
+  object-fit: contain;
+  height: auto;
+  color: #f2f2f2;
+  fill: white;
+  text-align: center;
+  font-weight: 900;
+  margin: 10px auto auto auto;
+}
+
+.container3 {
+  max-width: 956px;
+  height: auto;
+  margin: 80px auto 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.img_section3 {
+  object-fit: cover;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 30%;
+  height: 13.625rem;
+  vertical-align: middle;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#our_trips_box {
+  background-color: rgb(182, 181, 181);
+  font-size: large;
+  color: #f2f2f2;
+  width: 30%;
+  object-fit: cover;
+  height: 13.625rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_trips {
+  position: absolute;
+}
+
+.section4 {
+  background-color: #33292a;
+}
+
+.container4 {
+  display: flex;
+  margin: auto auto auto auto;
+  padding: 70px 0px 70px 0px;
+  justify-content: space-between;
+  max-width: 956px;
+}
+
+.text_4_1 {
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  flex-basis: 33%;
+  min-width: 200px;
+  padding: 10px 0px 0px 20px;
+  color: #f2f2f2;
+  justify-content: flex-start;
+}
+
+.text_4_2 {
+  font-family: "Roboto", sans-serif;
+  flex-basis: 66%;
+  max-width: 550px;
+  color: #f2f2f2;
+  margin: auto 0px auto 0px;
+  padding-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  width: 8em;
+  padding: 10px;
+  margin-top: 30px;
+  color: #161515;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: #ece5e5;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text_5_1 {
+  margin: auto auto auto auto;
+  padding: 70px 20px 30px 20px;
+  max-width: 366px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.container5_2 {
+  display: flex;
+  margin: 40px auto 40px auto;
+  justify-content: space-between;
+  max-width: 956px;
+}
+
+.text_5_2 {
+  margin: auto auto auto auto;
+  padding: 0px 20px 20px 20px;
+  max-width: 415px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.bold_text {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-style: normal;
+}
+.heading {
+  font-size: 35px;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.profile_pic {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.container6 {
+  /*max-width: 956px;*/
+  height: calc(100vh - 4rem);
+  margin: auto auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.img_section6 {
+  object-fit: cover;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 50%;
+  height: calc(50vh - 2rem);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.footer {
+  background-color: #33292a;
+  height: 7rem;
+  display: flex;
+}
+
+.footer_text {
+  background-color: #33292a;
+  margin: auto auto auto auto;
+  color: #f2f2f2;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.footer_text a:link {
+  color: #e9877b;
+}
+
+/* visited link */
+.footer_text a:visited {
+  color: #e9877b;
+}
